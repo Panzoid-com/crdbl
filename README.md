@@ -2,6 +2,10 @@
 
 `crdbl` ("credible") is a CRDT-based database library built for collaborative editing, version control, and beyond. It offers a rich set unique of features that provide a foundation for building innovative, data-driven applications.
 
+## Demo
+
+[Try a basic online demo](https://Panzoid-com.github.io/crdbl) showing a few db features with a text editor.
+
 ## Key Features
 
 - **Operation-based Architecture**: `crdbl` works by applying primitive operations like `createNode()`, `addChild()`, `insertText()`, `setValue()`, etc. to make changes to the database. These operations can be filtered, modified, and combined using stream-like abstractions.
