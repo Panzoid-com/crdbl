@@ -1,0 +1,19 @@
+{
+  "name": "@panzoid/crdbl",
+  "version": "5.1.0",
+  "description": "CRDT-based database library.",
+  "type": "module",
+  "types": "crdbl.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "dist/index.js",
+    "dist/crdbl.wasm",
+    "dist/crdbl.ww.js",
+    "crdbl.d.ts"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js"
+}

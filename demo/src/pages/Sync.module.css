@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50px;
+  flex-shrink: 0;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10px;
+}
+
+.toolbar button {
+  border-radius: 5px;
+  padding: 8px;
+  border: 0;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #666;
+}
+
+.toolbar .pendingOps {
+  background-color: #222;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  color: #ddd;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.editorSplit {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.editorSplit > div {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.editorSplit > div > div {
+  height: 100%;
+}

@@ -1,0 +1,28 @@
+#root {
+  position: absolute;
+  inset: 0 0 0 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  gap: 15px;
+  background-color: #000;
+  color: #ddd;
+}
+
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  border-bottom: 2px solid #aaa;
+}
+
+.navbar a.current {
+  font-weight: bold;
+  border-bottom: none;
+}

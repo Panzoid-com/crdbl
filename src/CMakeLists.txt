@@ -1,0 +1,49 @@
+set(SOURCES
+    Core.cpp
+    TypeLogGenerator.cpp
+    Effect.cpp
+    Position.cpp
+    Attribute.cpp
+    Tag.cpp
+    NodeType.cpp
+    PrimitiveNodeTypes.cpp
+    Timestamp.cpp
+    VectorTimestamp.cpp
+    NodeId.cpp
+    InheritanceContext.cpp
+    Operation.cpp
+    LogOperation.cpp
+    OperationIterator.cpp
+    OperationFilter.cpp
+    OperationBuilder.cpp
+    OperationLog.cpp
+    Value.cpp
+    BlockValue.cpp
+    Json.cpp
+    Event.cpp
+    Nodes/Node.cpp
+    Nodes/ContainerNode.cpp
+    Nodes/SetNode.cpp
+    Nodes/ListNode.cpp
+    Nodes/MapNode.cpp
+    Nodes/ReferenceNode.cpp
+    Nodes/OrderedFloat64MapNode.cpp
+    Nodes/ValueNode.cpp
+    Nodes/BlockValueNode.cpp
+    Serialization/LogOperationSerialization.cpp
+    Serialization/standard_v1/LogOperationSerialization.cpp
+    Serialization/standard_v1/LogOperation.cpp
+    Serialization/standard_v1/LogOperationDeserializer.cpp
+    Serialization/standard_v1/LogOperationSerializer.cpp
+    Streams/CallbackWritableStream.cpp
+    Streams/TransformOperationStream.cpp
+    Streams/FilterOperationStream.cpp
+    Streams/ReadableStreamBase.cpp
+    Streams/RedoFilterOperationStream.cpp
+    Streams/UndoFilterOperationStream.cpp
+    Streams/WriteFilterOperationStream.cpp
+    Streams/TeeStream.cpp
+)
+
+add_library(ProjectDB ${SOURCES})
+target_include_directories (ProjectDB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

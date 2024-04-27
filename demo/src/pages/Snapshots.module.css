@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.editorSplit {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.editorSplit > div:first-child {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.editorSplit > div:first-child > div {
+  height: 100%;
+}
+
+.editorSplit > div:last-child {
+  height: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  padding: 10px;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #ddd;
+  border-radius: 5px;
+}
+
+.tag:not(.active) > button:hover {
+  text-decoration: underline;
+}
+
+.tag > button {
+  flex-grow: 1;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font-size: inherit;
+  font-family: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.tag.active > button {
+  font-weight: bold;
+  color: #fff;
+  cursor: default;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-basis: min-content;
+  gap: 5px;
+  padding: 10px;
+}
+
+.toolbar button {
+  border-radius: 5px;
+  padding: 8px;
+  border: 0;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #666;
+}
